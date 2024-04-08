@@ -3,6 +3,9 @@ import avatar from '../../assets/avatar.png'
 import { colors, fontSize } from '../../utils/utils'
 import Button from '../button/button'
 import download from '../../assets/download.svg'
+import email from '../../assets/email.svg'
+import linkedin from '../../assets/linkedin.svg'
+import github from '../../assets/github-light.svg'
 
 
 const Hero = () => {
@@ -16,14 +19,20 @@ const Hero = () => {
             </div>
             <Line></Line>
             <HeroContainer>
-        <div style={{ padding: '25px'}}>
+        <div style={{ paddingLeft: '50px'}}>
             <img src={avatar} alt="avatar" />
         </div>
-        <div style={{ paddingLeft: '75px'}}>
+        <div style={{ paddingLeft: '120px', paddingRight: '100px'}}>
             <Title>Brice RABOUIN</Title>
             <SubTitle>Développeur Fullstack Javascript</SubTitle>
             <Text>Je suis développeur Fullstack JavaScript, passionné par la création d'applications web dynamiques. Avec une expertise intermédiaire dans l'utilisation de technologies telles que Node.js, Express, React et MongoDB, je suis constamment motivé à me lancer dans de nouveaux défis et à rester à l'affût des innovations dans le domaine. Je m’intéresse aussi aux applications mobiles et aux avancées du Web 3.0.</Text>
-            <Button svg={download} label="CV" to="/cv" />
+            <div style ={{ display: 'flex', gap: '20px', marginTop: '30px' }}>
+            <Button svg={download} alt='download icon' label="CV" to="/cv" />
+            <Button svg={email} alt='email icon' label="Mail" to="/cv" />
+            <Button svg={linkedin} alt='linkedin icon' label="Linkedin" to="https://www.linkedin.com/in/brice-rabouin/" />
+            <Button svg={github} alt='github icon' label="Github" to="https://github.com/BriiceR" />
+            </div>
+            
         </div>
         </HeroContainer>
         </Border>
@@ -33,11 +42,7 @@ const Hero = () => {
 export default Hero
 
 const Border = styled.div`
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    margin: 30Px;
-    // padding: 50px 50px 50px 50px;
+    margin: 20px;
     border-color: ${colors.primary};
     border-width: 5px;
     border-style: solid;
@@ -47,7 +52,7 @@ const HeroContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 50px 50px 50px;
+    padding: 30px 0px 30px 0px;
 `
 const Title = styled.h1`
     font-size: ${fontSize.title};
@@ -56,10 +61,13 @@ const Title = styled.h1`
 const SubTitle = styled.h2`
     font-size: ${fontSize.subTitle};
     color: ${colors.text_violet};
+    margin-bottom: 20px;
 `
 const Text = styled.p`
     font-size: ${fontSize.text};
     color: ${colors.text_light};
+    margin-bottom: 20px;
+    text-align: justify;
 `
 const Dot = styled.span`
     width: 15px;

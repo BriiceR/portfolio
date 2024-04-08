@@ -1,5 +1,6 @@
 import './App.css'
 import Hero from './components/hero/hero'
+import Skills from './components/skills/skills'
 
 function App() {
   
@@ -7,6 +8,7 @@ function App() {
   return (
     <>
     <Hero/>
+    <Skills/>
      
        
     </>
