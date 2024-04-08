@@ -10,14 +10,14 @@ import figma from '../../assets/figma.svg'
 const Skills = () => {
 
     return (
-        <div style={{ display: 'flex', justifyContent: 'space-around', gap: '20px', padding: '0px 100px' }}>
-            <img src={typescript} alt="typescript icon" />
-            <img src={react} alt="react icon" />
-            <img src={node} alt="node icon" />
-            <img src={express} alt="express icon" />
-            <img src={mongodb} alt="mongodb icon" />
-            <img src={mysql} alt="mysql icon" />
-            <img src={figma} alt="figma icon" />
+        <div style={{ display: 'flex', justifyContent: 'space-around', gap: '20px', padding: '10px 100px' }}>
+            <img src={typescript} alt="typescript icon" title='typescript' />
+            <img src={react} alt="react icon" title='react' />
+            <img src={node} alt="node icon" title='nodejs' />
+            <img src={express} alt="express icon" title='express' />
+            <img src={mongodb} alt="mongodb icon" title='mongodb' />
+            <img src={mysql} alt="mysql icon" title='mysql'/>
+            <img src={figma} alt="figma icon" title='figma' />
         </div>
     )
 

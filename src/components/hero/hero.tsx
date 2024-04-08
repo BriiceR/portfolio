@@ -19,7 +19,7 @@ const Hero = () => {
             </div>
             <Line></Line>
             <HeroContainer>
-        <div style={{ paddingLeft: '50px'}}>
+        <div style={{ paddingLeft: '100px'}}>
             <img src={avatar} alt="avatar" />
         </div>
         <div style={{ paddingLeft: '120px', paddingRight: '100px'}}>
