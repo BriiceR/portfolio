@@ -15,6 +15,7 @@ export const radius = {
     small: '5px',
     medium: '10px',
     large: '30px',
+    max: '1000px',
 }
 
 export const fontSize = {
@@ -22,6 +23,7 @@ export const fontSize = {
     mobileSubTitle: '1.4em',
     mobileTitle: '2.4em',
 
+    text: '1.2em',
     button: '1.8em',
     subTitle: '2em',
     title: '3.6em',

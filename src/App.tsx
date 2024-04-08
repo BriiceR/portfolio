@@ -1,13 +1,17 @@
 import './App.css'
-import img from './assets/projet3.png'
+import Hero from './components/hero/hero'
+
 function App() {
   
 
   return (
     <>
-      <p>Portfolio</p>
-      <img src={img} />
+    <Hero/>
+     
+       
     </>
+
+
   )
 }
 
