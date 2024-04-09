@@ -1,0 +1,26 @@
+[
+	{
+		"id":1,
+		"name": "JOB BOARD",
+		"description":"Plateforme de recherche d'emploi en ligne",
+		"skills":["React", "Node.js", "MongoDB", "Express"],
+		"image": "../../assets/projet1.png",
+		"github": "https://github.com/BriiceR/job_board"
+	},
+	{
+		"id":2,
+		"name": "COACH Y MEDIA",
+		"description":"Application de gestion de modules de formation",
+        "skills":["React", "Node.js", "MongoDB", "Express"],
+		"image": "../../assets/projet2.png",
+		"github": "https://github.com/BriiceR/Coach-y-Media"	
+	},	
+	{
+		"id":3,
+		"name": "TIC-TAC-TOE",
+		"description":"Tic-Tac-Toe construit avec React !",
+		"skills":["React", "Node.js"],
+		"image": "../../assets/projet3.png",
+		"github": "https://github.com/BriiceR/React-Tic-Tac-Toe"
+	}
+]
