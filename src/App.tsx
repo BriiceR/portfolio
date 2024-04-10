@@ -4,6 +4,7 @@ import Hero from './components/hero/hero'
 import Skills from './components/skills/skills'
 import Projects from './components/myprojects/myprojects'
 import Contacts from './components/contacts/contact'
+import Goals from './components/goals/goals'
 
 function App() {
   
@@ -14,6 +15,8 @@ function App() {
     <Skills/>
     <ArrowSection/>
     <Projects/>
+    <ArrowSection/>
+    <Goals/>
     <ArrowSection/>
     <Contacts/>
        
