@@ -2,7 +2,7 @@
 	{
 		"id":1,
 		"name": "JOB BOARD",
-		"description":"Plateforme de recherche d'emploi en ligne",
+		"description":"Plateforme de recherche d'emploi en ligne.",
 		"skills":["React", "Node.js", "MongoDB", "Express"],
 		"image": "/projet1.png",
 		"github": "https://github.com/BriiceR/job_board"
@@ -10,7 +10,7 @@
 	{
 		"id":2,
 		"name": "COACH Y MEDIA",
-		"description":"Application de gestion de modules de formation",
+		"description":"Application de gestion de modules de formation.",
         "skills":["React", "Node.js", "MongoDB", "Express"],
 		"image": "/projet2.png",
 		"github": "https://github.com/BriiceR/Coach-y-Media"	

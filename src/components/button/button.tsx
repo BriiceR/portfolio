@@ -21,8 +21,8 @@ export default Button;
 
 const StyledLink = styled.a`
     display: flex;
-    align-items: center; /* Centrer verticalement le contenu */
-    justify-content: center; /* Centrer horizontalement le contenu */
+    align-items: center; 
+    justify-content: center; 
     color: ${colors.text_light};
     font-size: ${fontSize.button};
     background-color: ${colors.primary};
@@ -31,7 +31,7 @@ const StyledLink = styled.a`
     text-decoration: none;
     width: 126px;
     height: 40px;
-  
+    transition:all 1s;
     img {
        margin-left: 2px;
         
@@ -43,6 +43,7 @@ const StyledLink = styled.a`
     }
   
     &:hover {
+        
         background-color: #8D4FBE;
     }
 `;

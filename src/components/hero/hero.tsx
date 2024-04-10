@@ -6,6 +6,7 @@ import download from '../../assets/download.svg'
 import email from '../../assets/email.svg'
 import linkedin from '../../assets/linkedin.svg'
 import github from '../../assets/github-light.svg'
+import cv from '../../assets/Brice cv_2024_CDA_compressed.pdf'
 
 
 const Hero = () => {
@@ -27,8 +28,8 @@ const Hero = () => {
             <SubTitle>Développeur Fullstack Javascript</SubTitle>
             <Text>Je suis développeur Fullstack JavaScript, passionné par la création d'applications web dynamiques. Avec une expertise intermédiaire dans l'utilisation de technologies telles que Node.js, Express, React et MongoDB, je suis constamment motivé à me lancer dans de nouveaux défis et à rester à l'affût des innovations dans le domaine. Je m’intéresse aussi aux applications mobiles et aux avancées du Web 3.0.</Text>
             <div style ={{ display: 'flex', gap: '20px', marginTop: '30px' }}>
-            <Button svg={download} alt='download icon' label="CV" to="/cv" />
-            <Button svg={email} alt='email icon' label="Mail" to="/cv" />
+            <Button svg={download} alt='download icon' label="CV" to={cv}  />
+            <Button svg={email} alt='email icon' label="Mail" to="mailto:VotreAdresseEmail@gmail.com" />
             <Button svg={linkedin} alt='linkedin icon' label="Linkedin" to="https://www.linkedin.com/in/brice-rabouin/" />
             <Button svg={github} alt='github icon' label="Github" to="https://github.com/BriiceR" />
             </div>

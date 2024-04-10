@@ -8,7 +8,6 @@ interface CardProps {
 }
 
 
-
 const Card: React.FC<CardProps> = ({ project }) => {
 
     return (
@@ -21,7 +20,7 @@ const Card: React.FC<CardProps> = ({ project }) => {
                     <Skill key={index}>{skill}</Skill>
                 ))}
             </SkillsContainer>
-            <div style={{ display: 'flex', justifyContent: 'end'}}>
+            <div style={{ display: 'flex', justifyContent: 'end', bottom: '0px', right: '5px', position: 'absolute' }}>
             <a href={project.github} target="_blank" rel="noreferrer"><img src={githubdark} alt="linkdin" /></a>
             </div>
         </CardContainer>
@@ -31,12 +30,12 @@ const Card: React.FC<CardProps> = ({ project }) => {
 export default Card
 
 const CardContainer = styled.div`
+    position: relative;
     background-color: ${colors.secondary};
     border-radius: ${radius.medium};
     padding: 5px;
     width: 280px;
     height: 425px;
-
 `
 const Img = styled.img`
     width: 100%;
@@ -45,16 +44,21 @@ const Img = styled.img`
 const TitleCard = styled.h2`
     font-size: ${fontSize.text};
     color: ${colors.text_dark};
+    padding: 5px;
 `
 const TextCard = styled.p`
     color: ${colors.text_dark};
     font-size: ${fontSize.button};
+    padding: 5px;
 `
 const SkillsContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
     justify-content: start;
+    position: absolute;
+    bottom: 10px;
+    padding: 5px;
 `
 const Skill = styled.p`
     color: ${colors.text_light};
@@ -64,4 +68,4 @@ const Skill = styled.p`
     padding: 5px;
     width: 80px;
     text-align: center;
-    `
+`
