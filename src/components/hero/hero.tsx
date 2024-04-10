@@ -42,9 +42,9 @@ const Hero = () => {
 export default Hero
 
 const Border = styled.div`
-    margin: 20px;
+    margin: 20px 30px 10px 30px;
     border-color: ${colors.primary};
-    border-width: 5px;
+    border-width: 3px;
     border-style: solid;
     border-radius: 5px;
 `
@@ -79,6 +79,6 @@ const Dot = styled.span`
 const Line = styled.span`
     display: block; 
     width: 100%;
-    height: 5px;
+    height: 3px;
     background-color: ${colors.primary};
 `

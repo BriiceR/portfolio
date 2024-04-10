@@ -24,7 +24,7 @@ const StyledLink = styled.a`
     align-items: center; /* Centrer verticalement le contenu */
     justify-content: center; /* Centrer horizontalement le contenu */
     color: ${colors.text_light};
-    font-size: ${fontSize.text};
+    font-size: ${fontSize.button};
     background-color: ${colors.primary};
     padding: 5px;
     border-radius: ${radius.max};

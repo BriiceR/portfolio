@@ -10,7 +10,7 @@ import figma from '../../assets/figma.svg'
 const Skills = () => {
 
     return (
-        <div style={{ display: 'flex', justifyContent: 'space-around', gap: '20px', padding: '10px 100px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-around', padding: '30px 200px' }}>
             <img src={typescript} alt="typescript icon" title='typescript' />
             <img src={react} alt="react icon" title='react' />
             <img src={node} alt="node icon" title='nodejs' />

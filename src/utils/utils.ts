@@ -24,7 +24,7 @@ export const fontSize = {
     mobileTitle: '2.4em',
 
     text: '1.2em',
-    button: '1.8em',
+    button: '0.9em',
     subTitle: '2em',
     title: '3.6em',
 }
