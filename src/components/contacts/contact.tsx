@@ -30,6 +30,6 @@ export default Contacts
 
 const Div = styled.div`
     background: url(${blob}) no-repeat;
-    background-position: 110% ; 
+    background-position: 100% ; 
     background-size: 15%;
 `

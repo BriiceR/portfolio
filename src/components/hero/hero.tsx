@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import avatar from '../../assets/avatar.png'
-import { colors, fontSize } from '../../utils/utils'
+import { colors, fontSize, mediaMax } from '../../utils/utils'
 import Button from '../button/button'
 import download from '../../assets/download.svg'
 import email from '../../assets/email.svg'
@@ -24,7 +24,7 @@ const Hero = () => {
                 <AvatarDiv>
                     <img src={avatar} alt="avatar" />
                 </AvatarDiv>
-                <div style={{ paddingLeft: '120px', paddingRight: '100px' }}>
+                <TextDiv>
                     <Title>Brice RABOUIN</Title>
                     <SubTitle>Développeur Fullstack Javascript</SubTitle>
                     <Text>Je suis développeur Fullstack JavaScript, passionné par la création d'applications web dynamiques. Avec une expertise intermédiaire dans l'utilisation de technologies telles que Node.js, Express, React et MongoDB, je suis constamment motivé à me lancer dans de nouveaux défis et à rester à l'affût des innovations dans le domaine. Je m’intéresse aussi aux applications mobiles et aux avancées du Web 3.0.</Text>
@@ -35,10 +35,10 @@ const Hero = () => {
                         <Button svg={github} alt='github icon' label="Github" to="https://github.com/BriiceR" />
                     </div>
 
-                </div>
+                </TextDiv>
             </HeroContainer>
 
-        </Border>
+        </Border >
     )
 }
 
@@ -53,6 +53,10 @@ const Border = styled.div`
     background: url(${blob}) no-repeat ;
     background-position: 0%;
     background-size: 35%;
+    ${mediaMax[2]} {
+        background-size: 50%;
+        background-position: -15%;
+    }
 `
 const HeroContainer = styled.div`
     display: flex;
@@ -63,6 +67,17 @@ const HeroContainer = styled.div`
 `
 const AvatarDiv = styled.div`
     padding-left: 100px;
+    ${mediaMax[2]} {
+        padding-left: 30px;
+    }
+`
+const TextDiv = styled.div`
+    padding-right: 100px;
+    padding-left: 120px;
+    ${mediaMax[2]} {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 `
 const Title = styled.h1`
     font-size: ${fontSize.title};

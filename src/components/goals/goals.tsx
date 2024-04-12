@@ -11,14 +11,14 @@ const Goals = () => {
             <div style={{ display: 'flex', justifyContent: 'center', padding: '30px' }}>
                 <h1>Mes objectifs</h1>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', gap: '300px', margin: '10px 10% 10px 220px', paddingTop: '30px' }}>
-                <p>2021 <br />
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'end', gap: '340px', margin: '10px 0 10px 50px', paddingTop: '30px' }}>
+                <p style={{ width: '120px' }}>2021 <br />
                     Reconversion</p>
-                <p style={{ marginLeft: '40px' }}>2023 <br />
+                <p style={{ width: '120px' }}>2023 <br />
                     Bac +2 développeur <br />
                     web et mobile <br />
                     CEFIM</p>
-                <p>2025 <br />
+                <p style={{ width: '120px' }}>2025 <br />
                     Développeur CDI <br />
                     formation web3</p>
             </div>
@@ -73,6 +73,5 @@ const Line = styled.span`
 `
 const Div = styled.div`
     background: url(${blob}) no-repeat ;
-    background-position: -20%;
-    background-size: 25%;
+    background-size: 20%;
 `
