@@ -1,11 +1,13 @@
 import styled from '@emotion/styled'
 import { colors, radius } from '../../utils/utils'
 import check from '../../assets/check.svg'
+import blob from '/Blob.svg'
+
 
 const Goals = () => {
 
     return (
-        <>
+        <Div>
             <div style={{ display: 'flex', justifyContent: 'center', padding: '30px' }}>
                 <h1>Mes objectifs</h1>
             </div>
@@ -42,7 +44,7 @@ const Goals = () => {
                     Concepteur développeur <br />
                     d’application</p>
             </div>
-        </>
+        </Div>
     )
 }
 
@@ -68,4 +70,9 @@ const Line = styled.span`
     width: 180px;
     height: 4px;
     background-color: ${colors.primary};
+`
+const Div = styled.div`
+    background: url(${blob}) no-repeat ;
+    background-position: -20%;
+    background-size: 25%;
 `
