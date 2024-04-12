@@ -57,13 +57,18 @@ const Border = styled.div`
         background-size: 50%;
         background-position: -15%;
     }
+    ${mediaMax[1]} {
+        background-position: 50% 0%;
+    }
 `
 const HeroContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px 0px 30px 0px;
-    
+    ${mediaMax[1]} {
+        flex-direction: column;
+    }
 `
 const AvatarDiv = styled.div`
     padding-left: 100px;
