@@ -7,6 +7,7 @@ import email from '../../assets/email.svg'
 import linkedin from '../../assets/linkedin.svg'
 import github from '../../assets/github-light.svg'
 import cv from '../../assets/Brice cv_2024_CDA_compressed.pdf'
+import blob from '/Blob.svg'
 
 
 const Hero = () => {
@@ -14,28 +15,29 @@ const Hero = () => {
     return (
         <Border>
             <div style={{ display: 'flex', padding: '20px' }}>
-                <Dot style={{ opacity: '0.8'}}></Dot>
-                <Dot style={{ opacity: '0.6'}}></Dot>
-                <Dot style={{ opacity: '0.4'}}></Dot>
+                <Dot style={{ opacity: '0.8' }}></Dot>
+                <Dot style={{ opacity: '0.6' }}></Dot>
+                <Dot style={{ opacity: '0.4' }}></Dot>
             </div>
             <Line></Line>
             <HeroContainer>
-        <div style={{ paddingLeft: '100px'}}>
-            <img src={avatar} alt="avatar" />
-        </div>
-        <div style={{ paddingLeft: '120px', paddingRight: '100px'}}>
-            <Title>Brice RABOUIN</Title>
-            <SubTitle>Développeur Fullstack Javascript</SubTitle>
-            <Text>Je suis développeur Fullstack JavaScript, passionné par la création d'applications web dynamiques. Avec une expertise intermédiaire dans l'utilisation de technologies telles que Node.js, Express, React et MongoDB, je suis constamment motivé à me lancer dans de nouveaux défis et à rester à l'affût des innovations dans le domaine. Je m’intéresse aussi aux applications mobiles et aux avancées du Web 3.0.</Text>
-            <div style ={{ display: 'flex', gap: '20px', marginTop: '30px' }}>
-            <Button svg={download} alt='download icon' label="CV" to={cv}  />
-            <Button svg={email} alt='email icon' label="Mail" to="mailto:VotreAdresseEmail@gmail.com" />
-            <Button svg={linkedin} alt='linkedin icon' label="Linkedin" to="https://www.linkedin.com/in/brice-rabouin/" />
-            <Button svg={github} alt='github icon' label="Github" to="https://github.com/BriiceR" />
-            </div>
-            
-        </div>
-        </HeroContainer>
+                <AvatarDiv>
+                    <img src={avatar} alt="avatar" />
+                </AvatarDiv>
+                <div style={{ paddingLeft: '120px', paddingRight: '100px' }}>
+                    <Title>Brice RABOUIN</Title>
+                    <SubTitle>Développeur Fullstack Javascript</SubTitle>
+                    <Text>Je suis développeur Fullstack JavaScript, passionné par la création d'applications web dynamiques. Avec une expertise intermédiaire dans l'utilisation de technologies telles que Node.js, Express, React et MongoDB, je suis constamment motivé à me lancer dans de nouveaux défis et à rester à l'affût des innovations dans le domaine. Je m’intéresse aussi aux applications mobiles et aux avancées du Web 3.0.</Text>
+                    <div style={{ display: 'flex', gap: '20px', marginTop: '30px' }}>
+                        <Button svg={download} alt='download icon' label="CV" to={cv} />
+                        <Button svg={email} alt='email icon' label="Mail" to="mailto:VotreAdresseEmail@gmail.com" />
+                        <Button svg={linkedin} alt='linkedin icon' label="Linkedin" to="https://www.linkedin.com/in/brice-rabouin/" />
+                        <Button svg={github} alt='github icon' label="Github" to="https://github.com/BriiceR" />
+                    </div>
+
+                </div>
+            </HeroContainer>
+
         </Border>
     )
 }
@@ -48,12 +50,19 @@ const Border = styled.div`
     border-width: 3px;
     border-style: solid;
     border-radius: 5px;
+    background: url(${blob}) no-repeat ;
+    background-position: 0%;
+    background-size: 35%;
 `
 const HeroContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px 0px 30px 0px;
+    
+`
+const AvatarDiv = styled.div`
+    padding-left: 100px;
 `
 const Title = styled.h1`
     font-size: ${fontSize.title};

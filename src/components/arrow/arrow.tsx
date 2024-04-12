@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { bounce, mediaMax } from '../../utils/utils';
 
 const ArrowSection = () => {
-    
+
     return (
         <AnimatedContainer>
             <Arrow src={arrow} alt="arrow" />

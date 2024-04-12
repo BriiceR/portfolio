@@ -16,7 +16,7 @@ const Skills = () => {
             <img src={node} alt="node icon" title='nodejs' />
             <img src={express} alt="express icon" title='express' />
             <img src={mongodb} alt="mongodb icon" title='mongodb' />
-            <img src={mysql} alt="mysql icon" title='mysql'/>
+            <img src={mysql} alt="mysql icon" title='mysql' />
             <img src={figma} alt="figma icon" title='figma' />
         </div>
     )

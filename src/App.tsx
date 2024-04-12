@@ -7,19 +7,19 @@ import Contacts from './components/contacts/contact'
 import Goals from './components/goals/goals'
 
 function App() {
-  
+
 
   return (
     <>
-    <Hero/>
-    <Skills/>
-    <ArrowSection/>
-    <Projects/>
-    <ArrowSection/>
-    <Goals/>
-    <ArrowSection/>
-    <Contacts/>
-       
+      <Hero />
+      <Skills />
+      <ArrowSection />
+      <Projects />
+      <ArrowSection />
+      <Goals />
+      <ArrowSection />
+      <Contacts />
+
     </>
 
 

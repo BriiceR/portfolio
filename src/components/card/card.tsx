@@ -21,7 +21,7 @@ const Card: React.FC<CardProps> = ({ project }) => {
                 ))}
             </SkillsContainer>
             <div style={{ display: 'flex', justifyContent: 'end', bottom: '0px', right: '5px', position: 'absolute' }}>
-            <a href={project.github} target="_blank" rel="noreferrer"><img src={githubdark} alt="linkdin" /></a>
+                <a href={project.github} target="_blank" rel="noreferrer"><img src={githubdark} alt="linkdin" /></a>
             </div>
         </CardContainer>
     )

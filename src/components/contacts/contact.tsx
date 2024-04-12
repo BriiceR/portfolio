@@ -11,14 +11,14 @@ const Contacts = () => {
 
     return (
         <>
-        <div style={{ display: 'flex', justifyContent: 'center', padding: '30px'}}>
-        <h1>Mes Contacts</h1>
-        </div>
-        <div style ={{ display: 'flex', justifyContent: 'center', gap: '20px', margin: '30px 30px 60px 30px' }}>
-        <Button svg={download} alt='download icon' label="CV" to={cv}  />
-            <Button svg={email} alt='email icon' label="Mail" to="mailto:VotreAdresseEmail@gmail.com" />
-            <Button svg={linkedin} alt='linkedin icon' label="Linkedin" to="https://www.linkedin.com/in/brice-rabouin/" />
-            <Button svg={github} alt='github icon' label="Github" to="https://github.com/BriiceR" />
+            <div style={{ display: 'flex', justifyContent: 'center', padding: '30px' }}>
+                <h1>Mes Contacts</h1>
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', margin: '30px 30px 60px 30px' }}>
+                <Button svg={download} alt='download icon' label="CV" to={cv} />
+                <Button svg={email} alt='email icon' label="Mail" to="mailto:VotreAdresseEmail@gmail.com" />
+                <Button svg={linkedin} alt='linkedin icon' label="Linkedin" to="https://www.linkedin.com/in/brice-rabouin/" />
+                <Button svg={github} alt='github icon' label="Github" to="https://github.com/BriiceR" />
             </div>
         </>
     )
