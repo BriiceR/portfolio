@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import { colors, radius, mediaMax } from '../../utils/utils'
-import check from '../../assets/check.svg'
+import check from '/check.svg'
 import blob from '/Blob.svg'
 
 const Goals = () => {
