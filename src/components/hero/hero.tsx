@@ -28,12 +28,12 @@ const Hero = () => {
                     <Title>Brice RABOUIN</Title>
                     <SubTitle>Développeur Fullstack Javascript</SubTitle>
                     <Text>Je suis développeur Fullstack JavaScript, passionné par la création d'applications web dynamiques. Avec une expertise intermédiaire dans l'utilisation de technologies telles que Node.js, Express, React et MongoDB, je suis constamment motivé à me lancer dans de nouveaux défis et à rester à l'affût des innovations dans le domaine. Je m’intéresse aussi aux applications mobiles et aux avancées du Web 3.0.</Text>
-                    <div style={{ display: 'flex', gap: '20px', marginTop: '30px' }}>
+                    <ButtonContainer>
                         <Button svg={download} alt='download icon' label="CV" to={cv} />
                         <Button svg={email} alt='email icon' label="Mail" to="mailto:VotreAdresseEmail@gmail.com" />
                         <Button svg={linkedin} alt='linkedin icon' label="Linkedin" to="https://www.linkedin.com/in/brice-rabouin/" />
                         <Button svg={github} alt='github icon' label="Github" to="https://github.com/BriiceR" />
-                    </div>
+                    </ButtonContainer>
 
                 </TextDiv>
             </HeroContainer>
@@ -58,7 +58,12 @@ const Border = styled.div`
         background-position: -15%;
     }
     ${mediaMax[1]} {
-        background-position: 50% 0%;
+        background-size: 60%;
+        background-position: 50% 10%;
+    }
+    ${mediaMax[0]} {
+        background-size: 260px;
+        background-position: 50% 10%;
     }
 `
 const HeroContainer = styled.div`
@@ -75,6 +80,16 @@ const AvatarDiv = styled.div`
     ${mediaMax[2]} {
         padding-left: 30px;
     }
+    ${mediaMax[1]} {
+        display: flex;
+        justify-content: center;
+        padding-left: 0px;
+    }
+    ${mediaMax[0]} {
+        img {
+            width: 50%;
+        }
+    }
 `
 const TextDiv = styled.div`
     padding-right: 100px;
@@ -87,17 +102,26 @@ const TextDiv = styled.div`
 const Title = styled.h1`
     font-size: ${fontSize.title};
     color: ${colors.text_light};
+    ${mediaMax[0]} {
+        font-size: ${fontSize.subTitle};
+    }
 `
 const SubTitle = styled.h2`
     font-size: ${fontSize.subTitle};
     color: ${colors.text_violet};
     margin-bottom: 20px;
+    ${mediaMax[0]} {
+        font-size: ${fontSize.text};
+    }
 `
 const Text = styled.p`
     font-size: ${fontSize.text};
     color: ${colors.text_light};
     margin-bottom: 20px;
     text-align: justify;
+    ${mediaMax[0]} {
+        font-size: ${fontSize.button};
+    }
 `
 const Dot = styled.span`
     width: 15px;
@@ -111,4 +135,12 @@ const Line = styled.span`
     width: 100%;
     height: 3px;
     background-color: ${colors.primary};
+`
+export const ButtonContainer = styled.div`
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    ${mediaMax[0]} {
+        flex-wrap: wrap;
+    }
 `

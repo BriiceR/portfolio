@@ -3,6 +3,7 @@ import projects from '../../data/myprojects.json'
 import Project from '../../types/project'
 import styled from '@emotion/styled'
 import blob from '/Blob.svg'
+import { mediaMax } from '../../utils/utils'
 
 const Projects = () => {
 
@@ -11,7 +12,7 @@ const Projects = () => {
             <div style={{ display: 'flex', justifyContent: 'center', padding: '30px' }}>
                 <h1>Mes Projets</h1>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '100px', padding: '30px' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '80px', padding: '30px' }}>
 
                 {projects.map((project: Project) => (
                     <Card key={project.id} project={project} />
@@ -27,4 +28,7 @@ const Div = styled.div`
     background: url(${blob}) no-repeat ;
     background-position: 100%;
     background-size: 30%;
+    ${mediaMax[0]} {
+        background-size: 70%;
+    }
 `
