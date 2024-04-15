@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import avatar from '../../assets/avatar.png'
+import avatar from '../../assets/avatar.svg'
 import { colors, fontSize, mediaMax } from '../../utils/utils'
 import Button from '../button/button'
 import download from '../../assets/download.svg'
@@ -98,6 +98,10 @@ const TextDiv = styled.div`
         padding-left: 30px;
         padding-right: 30px;
     }
+    ${mediaMax[0]} {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 `
 const Title = styled.h1`
     font-size: ${fontSize.title};
@@ -142,5 +146,6 @@ export const ButtonContainer = styled.div`
     margin-top: 20px;
     ${mediaMax[0]} {
         flex-wrap: wrap;
+        justify-content: center;
     }
 `
