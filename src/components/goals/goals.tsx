@@ -10,18 +10,7 @@ const Goals = () => {
             <div style={{ display: 'flex', justifyContent: 'center', padding: '30px' }}>
                 <h1>Mes objectifs</h1>
             </div>
-            {/* <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'end', gap: '340px', margin: '10px 0 10px 50px', paddingTop: '30px' }}>
-                <p style={{ width: '120px' }}>2021 <br />
-                    Reconversion</p>
-                <p style={{ width: '120px' }}>2023 <br />
-                    Bac +2 développeur <br />
-                    web et mobile <br />
-                    CEFIM</p>
-                <p style={{ width: '120px' }}>2025 <br />
-                    Développeur CDI <br />
-                    formation web3</p>
-            </div> */}
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '120px', marginBottom: '220px' }}>
+            <LineContainer>
                 <CircleChecked />
                 <Line />
                 <CircleChecked2 />
@@ -31,18 +20,7 @@ const Goals = () => {
                 <Circle />
                 <Line />
                 <Circle2 />
-            </div>
-            {/* <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', gap: '200px', margin: '10px 15% 10px 420px', paddingBottom: '30px' }}>
-                <p>2022 <br />
-                    Développeur <br />
-                    autodidacte
-                </p>
-                <p style={{ marginLeft: '40px' }}>
-                    2024 <br />
-                    Contrat de professionnalisation <br />
-                    Concepteur développeur <br />
-                    d’application</p>
-            </div> */}
+            </LineContainer>
         </Div>
     )
 }
@@ -63,6 +41,10 @@ const CircleChecked = styled.span`
         width: 100px;
         display: block;
         top: -60px;
+        ${mediaMax[1]} {
+            top: 0px;
+            left: 60px;
+        }
     }
 `
 const CircleChecked2 = styled.span`
@@ -79,6 +61,10 @@ const CircleChecked2 = styled.span`
         width: 100px;
         display: block;
         top: 60px;
+        ${mediaMax[1]} {
+            top: 0px;
+            right: 60px;
+        }
     }
 `
 const CircleChecked3 = styled.span`
@@ -95,6 +81,10 @@ const CircleChecked3 = styled.span`
         width: 120px;
         display: block;
         top: -110px;
+        ${mediaMax[1]} {
+            top: 0px;
+            left: 60px;
+        }
     }
 `
 const Circle = styled.span` 
@@ -110,6 +100,10 @@ const Circle = styled.span`
         width: 100px;
         display: block;
         top: 60px;
+        ${mediaMax[1]} {
+            top: 0px;
+            right: 100px;
+        }
     }
 `
 const Circle2 = styled.span` 
@@ -128,6 +122,10 @@ const Circle2 = styled.span`
         ${mediaMax[2]} {
             right: 0;
         }
+        ${mediaMax[1]} {
+            top: 0px;
+            left: 60px;
+        }
         
     }
 `
@@ -136,8 +134,24 @@ const Line = styled.span`
     width: 180px;
     height: 4px;
     background-color: ${colors.primary};
+    ${mediaMax[1]} {
+        width: 4px;
+        height: 120px;
+    }
 `
 const Div = styled.div`
     // background: url(${blob}) no-repeat ;
     // background-size: 20%;
+`
+const LineContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 220px;
+    ${mediaMax[1]} {
+        flex-direction: column;
+        margin-bottom: 100px;
+        margin-top: 60px;
+    }
 `

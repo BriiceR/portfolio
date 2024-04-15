@@ -29,7 +29,7 @@ export const fontSize = {
     title: '3.6em',
 }
 
-const breakpointsMax = [499, 999, 1200, 1630];    
+const breakpointsMax = [650, 999, 1200, 1630];    
 export const mediaMax = breakpointsMax.map((bp) => `@media (max-width: ${bp}px)`);
 const breakpointsMin = [500, 768, 1000, 1629];
 export const mediaMin = breakpointsMin.map((bp) => `@media (min-width: ${bp}px)`);
