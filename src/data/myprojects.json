@@ -2,7 +2,7 @@
 	{
 		"id":1,
 		"name": "JOB BOARD",
-		"description":"Plateforme de recherche d'emploi en ligne avec implémentation d'une authantification par JWT.",
+		"description":"Plateforme de recherche d'emploi en ligne avec implémentation d'une authentification par JWT.",
 		"skills":["React", "Node.js", "MongoDB", "Express"],
 		"image": "/projet1.png",
 		"github": "https://github.com/BriiceR/job_board"
