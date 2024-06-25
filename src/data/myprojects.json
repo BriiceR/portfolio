@@ -19,7 +19,7 @@
 		"id":3,
 		"name": "ÉMOTION",
 		"description":"Web-app mobile pour le suivi de ses émotions.",
-		"skills":["React", "Firebase"],
+		"skills":["React", "Firebase", "PWA"],
 		"image": "/projet3.png",
 		"github": "https://github.com/BriiceR/M.-motion"
 	}
